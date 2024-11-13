@@ -1,0 +1,25 @@
+@import "const";
+
+.footer-top{
+  background: $main-color1;
+}
+.big_wrapper{
+  width: 100%;
+  overflow: hidden;
+  max-width: 1810px;
+}
+.footer-top_imfooter{
+  border-radius: 900px 900px 0 0;
+}
+
+.footer-centre{
+  background: $main-color2;
+  padding: 54px 0;
+}
+.footer-centre_lb{
+  display: flex;
+  flex-direction: column;
+}
+.footer-centre_logo{
+  margin-bottom: 36px;
+}
