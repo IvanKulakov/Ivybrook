@@ -2,9 +2,10 @@
 @import "reset";
 @import "footer";
 @import "button1";
+@import "header";
 
 .main {
-  font-family: $font-family1, $font-family2, sans-serif;
+  font-family: "Josefin Sans", "Cormorant Garamond", sans-serif;
   background: $main-color4;
   min-width: 320px;
   width: 100%;
