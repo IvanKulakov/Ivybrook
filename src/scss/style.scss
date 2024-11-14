@@ -2,10 +2,15 @@
 @import "reset";
 @import "footer";
 @import "button1";
+@import "button2";
 @import "header";
+@import "ourhistory";
+@import "aside";
+@import "our-approach";
+@import "why_mommy_ground";
 
 .main {
-  font-family: "Josefin Sans", "Cormorant Garamond", sans-serif;
+  font-family: "Josefin Sans", "Cormorant Garamond", "Roboto", sans-serif;
   background: $main-color4;
   min-width: 320px;
   width: 100%;

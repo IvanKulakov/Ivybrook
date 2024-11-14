@@ -1,0 +1,32 @@
+@import "const";
+
+.aside_block{
+  width: 400px;
+  background-color: $main-color3;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+}
+.aside_content{
+  font-family: $font-family1;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  color: $main-color4;
+  margin-bottom: 18px;
+}
+.aside_link{
+  text-decoration: none;
+  border: 2px solid $main-color4;
+  color: $main-color4;
+  font-family: $font-family2;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 15px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 22px 0;
+  cursor: pointer;
+}
