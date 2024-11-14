@@ -45,13 +45,27 @@
   margin: 0 auto;
   width: 100%;
   max-width: 1920px;
-  display: inline-block;
+  height: auto;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
-  box-sizing: border-box;
-  object-fit: cover;
+  max-height: 464px;
+
 }
-.header_bottom_img{
-  max-width: 100%;
-  display: block;
+.header_bottom_img1{
+  background: url("/img/banner-our-story.jpg") no-repeat center;
+  background-size: 100%;
+  width: 100%;
+  object-fit: cover;
+  height: 464px;
+
+}
+.header_bottom_img2{
+  background: url("/img/banner-plant-lrg.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+
+
 }
