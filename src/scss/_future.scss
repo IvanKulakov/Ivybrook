@@ -1,0 +1,33 @@
+@import "const";
+
+.future_background{
+  padding-bottom: 90px;
+}
+.future_title{
+  font-family: $font-family2;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  text-align: left;
+  color: $main-color5;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+.future_h1{
+  font-family: $font-family1;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 70px;
+  text-align: left;
+  color: $main-color8;
+  margin-bottom: 36px;
+}
+.future_content{
+  font-family: $font-family1;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: $main-color8;
+  margin-bottom: 20px;
+}

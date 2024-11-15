@@ -43,3 +43,58 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+.to_school_background{
+  padding: 90px 0;
+}
+.to_school_block{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.to_school_text_box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 80px;
+}
+.to_school_title{
+  font-family: $font-family1;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  text-align: left;
+  color: $main-color8;
+  padding-bottom: 34px;
+}
+.to_school_text{
+  font-family: $font-family2;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: $main-color8;
+  padding-bottom: 32px;
+}
+.to_school_link_box{
+  box-sizing: border-box;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  border: 2px solid $main-color5;
+}
+.to_school_link_title{
+  font-family: $font-family2;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: left;
+  color: $main-color8;
+}
+.to_school_link{
+  color: $main-color5;
+  decoration: underline $main-color5;
+  cursor: pointer;
+}
