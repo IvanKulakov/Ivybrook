@@ -1,0 +1,262 @@
+@import "const";
+
+.ourprograms_background{
+  padding-top: 70px;
+}
+.ourprograms_pos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.ourprograms_content_h1{
+  font-family: $font-family1;
+  text-align: left;
+  text-transform: capitalize;
+  margin-bottom: 14px;
+  color: $main-color8;
+}
+.ourprograms_content_title{
+  text-align: left;
+  font-family: $font-family1;
+  margin-bottom: 24px;
+  color: $main-color5;
+}
+.ourprograms_content_text{
+  font-family: $font-family3;
+  text-align: left;
+  color: $main-color8;
+}
+.ourprograms_content_h2{
+  font-family: $font-family3;
+  text-align: left;
+  color: $main-color8;
+}
+.ourprograms_content_link_block{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.ourprograms_content_link{
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  margin-left: 30px;
+  font-family: $font-family3;
+  text-align: left;
+  color: $main-color8;
+}
+.ourprograms_content_link_l{
+  color: $main-color5;
+}
+
+.ourprograms_box_block{
+  margin-left: 80px;
+}
+.ourprograms_box_nav{
+  box-shadow: 0 5.4px 9.9px 0 #00000014;
+  text-align: center;
+}
+.ourprograms_box_dist{
+  padding-top: 30px;
+}
+
+.ourprograms_box_nav_title{
+  padding: 22px 0;
+  background: $main-color2;
+}
+.ourprograms_box_nav_title_text{
+  font-family: $font-family4;
+  text-align: center;
+  color: $main-color8;
+}
+.ourprograms_box_nav_block{
+  padding: 10px 0 22px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.ourprograms_box_nav_link{
+  color: $main-color8;
+  font-family: $font-family3;
+  border-bottom: 1px solid $main-color2;
+  text-decoration: none;
+  padding-top: 12px;
+}
+
+.schedule_background{
+  background: $main-color11;
+  padding: 62px 0;
+}
+.schedule_pos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.schedule_h1{
+  font-family: $font-family4;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 70px;
+  color: $main-color8;
+  margin-bottom: 20px;
+}
+.schedule_text{
+  font-family: $font-family4;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  color: $main-color8;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.schedule_h2{
+  font-family: $font-family4;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 38.55px;
+  color: $main-color8;
+  margin-bottom: 20px;
+}
+.to_school_text_box_sa{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+@media (min-width: 320px) {
+
+}
+@media (min-width: 410px) {
+
+}
+@media (min-width: 510px) {
+
+}
+@media (min-width: 610px) {
+
+}
+@media (min-width: 710px) {
+
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 810px) {
+
+}
+@media (min-width: 910px) {
+
+}
+@media (min-width: 992px) {
+
+}
+@media (min-width: 1010px) {
+
+}
+@media (min-width: 1110px) {
+
+}
+@media (min-width: 1210px) {
+  .ourprograms_content_h1{
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 50px;
+  }
+  .ourprograms_content_title{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+  .ourprograms_content_h2{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  .ourprograms_content_text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 26px;
+  }
+  .ourprograms_box_nav{
+    width: 350px;
+  }
+  .ourprograms_box_nav_title_text{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 34px;
+  }
+  .ourprograms_box_nav_link{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  .ourprograms_content_link {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+  }
+  .to_school_text_box_sa{
+    margin-left: 60px;
+  }
+}
+@media (min-width: 1440px) {
+
+}
+@media (min-width: 1810px) {
+  .ourprograms_content_h1{
+    font-size: 67px;
+    font-weight: 500;
+    line-height: 70px;
+  }
+  .ourprograms_content_title{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+  }
+  .ourprograms_content_text{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 30px;
+  }
+  .ourprograms_content_h2{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+  .ourprograms_box_nav{
+    width: 400px;
+  }
+  .ourprograms_box_nav_title_text{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38px;
+  }
+  .ourprograms_box_nav_link{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+  .ourprograms_content_text{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 30px;
+  }
+  .ourprograms_content_link {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+  .to_school_text_box_sa{
+    margin-left: 80px;
+  }
+}
+@media (min-width: 1920px) {
+
+}

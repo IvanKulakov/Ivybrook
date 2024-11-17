@@ -1,4 +1,5 @@
 @import "const";
+
 .button2_block{
   position: relative;
   box-sizing: border-box;
@@ -8,6 +9,7 @@
   width: 410px;
   border: 1px solid $main-color5;
   background: none;
+  cursor: pointer;
 }
 .button_2_rotate{
   position: absolute;

@@ -3,20 +3,29 @@
 @import "footer";
 @import "button1";
 @import "button2";
+@import "button3";
 @import "header";
 @import "ourhistory";
 @import "aside";
 @import "our-approach";
 @import "why_mommy_ground";
+@import "future";
+@import "ourprograms";
+@import "mommyground";
 
 .main {
-  font-family: "Josefin Sans", "Cormorant Garamond", "Roboto", sans-serif;
+  font-family: "Josefin Sans", "Cormorant Garamond", "Roboto", "Lora", "Onest", sans-serif;
   background: $main-color4;
   min-width: 320px;
   width: 100%;
   margin: 0 auto;
 }
 .wrapper {
+  min-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+}
+.wrapper2 {
   min-width: 320px;
   width: 100%;
   margin: 0 auto;
@@ -81,14 +90,31 @@
   .wrapper {
     max-width: 1160px;
   }
+  .wrapper2{
+    max-width: 1110px;
+  }
 }
 @media (min-width: 1440px) {
   .wrapper {
     max-width: 1340px;
   }
+  .wrapper2{
+    max-width: 1210px;
+  }
 }
 @media (min-width: 1810px) {
   .wrapper {
     max-width: 1440px;
+  }
+  .wrapper2{
+    max-width: 1340px;
+  }
+}
+@media (min-width: 1920px) {
+  .wrapper {
+    max-width: 1600px;
+  }
+  .wrapper2{
+    max-width: 1450px;
   }
 }

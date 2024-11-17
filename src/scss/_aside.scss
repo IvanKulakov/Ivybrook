@@ -1,32 +1,103 @@
 @import "const";
 
 .aside_block{
-  width: 400px;
   background-color: $main-color3;
-  padding: 30px 40px;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
+  border-radius: 15px;
 }
 .aside_content{
-  font-family: $font-family1;
-  font-size: 32px;
-  font-weight: 500;
-  line-height: 30px;
   text-align: left;
+  font-family: $font-family1;
   color: $main-color4;
-  margin-bottom: 18px;
 }
 .aside_link{
   text-decoration: none;
   border: 2px solid $main-color4;
   color: $main-color4;
-  font-family: $font-family2;
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 15px;
+  font-family: $font-family4;
+  border-radius: 10px;
   text-transform: uppercase;
   box-sizing: border-box;
   text-align: center;
-  padding: 22px 0;
   cursor: pointer;
+}
+
+
+
+
+@media (min-width: 320px) {
+
+}
+@media (min-width: 410px) {
+
+}
+@media (min-width: 510px) {
+
+}
+@media (min-width: 610px) {
+
+}
+@media (min-width: 710px) {
+
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 810px) {
+
+}
+@media (min-width: 910px) {
+
+}
+@media (min-width: 992px) {
+
+}
+@media (min-width: 1010px) {
+
+}
+@media (min-width: 1110px) {
+
+}
+@media (min-width: 1210px) {
+  .aside_block{
+    width: 350px;
+    padding: 20px 30px;
+  }
+  .aside_link{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    padding: 18px 0;
+  }
+  .aside_content{
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 14px;
+  }
+}
+@media (min-width: 1440px) {
+
+}
+@media (min-width: 1810px) {
+  .aside_block{
+    width: 400px;
+    padding: 30px 40px;
+  }
+  .aside_link{
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    padding: 22px 0;
+  }
+  .aside_content{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 18px;
+  }
+}
+@media (min-width: 1920px) {
+
 }

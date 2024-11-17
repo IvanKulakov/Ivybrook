@@ -4,12 +4,12 @@
 <body class="main">
 
 @@include('html/header.html',{
-"img1":"/img/banner-our-story.jpg",
-"img2":"/img/banner-plant-lrg.jpg"
+"imgdata1":"header_bottom_img1_imgV1",
+"imgdata2":"header_bottom_img2_imgV1"
 })
 
 <div class="ourhistory_background">
-    <div class="wrapper ourhistory_container">
+    <div class="wrapper2 ourhistory_container">
         <div class="ourhistory_text_block">
             <h1 class="ourhistory_title">
                 Наша Історія
@@ -65,6 +65,29 @@
 @@include('html/our-approach.html',{ })
 
 @@include('html/why_mommy_ground.html',{ })
+
+<div class="to_school_background">
+    <div class="wrapper to_school_block">
+        <img class="to_school_img" src="/img/school.jpg" alt="school">
+        <div class="to_school_text_box">
+            <p class="to_school_title">Від садочка до школи: наші можливості</p>
+            <p class="to_school_text">
+                Ми раді повідомити, що наш садочок не лише забезпечує високоякісне виховання, але й створює чудову основу для подальшого навчання в нашій приватній школі. Ми прагнемо зробити перехід максимально плавним і комфортним для ваших дітей, надаючи їм усі необхідні знання та навички.</p>
+            <p class="to_school_text">
+                Ми раді повідомити, що наш садочок не лише забезпечує високоякісне виховання, але й створює чудову основу для подальшого навчання в нашій приватній школі. Ми прагнемо зробити перехід максимально плавним і комфортним для ваших дітей, надаючи їм усі необхідні знання та навички.
+            </p>
+            <div class="to_school_link_box">
+            <p class="to_school_link_title">Переходьте на сайт нашої школи.</br>
+            <a class="to_school_link_title to_school_link" href="#">Подумайте про майбутнє Вашої дитини вже зараз.</a>
+            </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('html/future.html',{ })
+
+@@include('html/footer.html',{ })
 
 </body>
 <script src="js/app.min.js"></script>
