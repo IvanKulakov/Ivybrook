@@ -6,3 +6,29 @@
 .mommyground_content_link{
   color: $main-color1;
 }
+.nav_mommyground{
+  padding-top: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+}
+.nav_mommyground_mr{
+  margin-right: 16px;
+}
+.nav_mommyground_svg{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.nav_mommyground_link{
+  font-family: $font-family5;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 21px;
+  color: $main-color8;
+  text-decoration: none;
+  cursor: pointer;
+}

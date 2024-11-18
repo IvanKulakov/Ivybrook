@@ -71,12 +71,18 @@
   color: $main-color8;
 }
 .ourprograms_box_nav_block{
+  width: fit-content;
   padding: 10px 0 22px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
 
+}
+.ourprograms_box{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .ourprograms_box_nav_link{
   color: $main-color8;
@@ -84,6 +90,12 @@
   border-bottom: 1px solid $main-color2;
   text-decoration: none;
   padding-top: 12px;
+  box-sizing: border-box;
+  transition: all .5s;
+}
+.ourprograms_box_nav_link:hover{
+  border-bottom: 1px solid $main-color3;
+  transition: all .5s;
 }
 
 .schedule_background{

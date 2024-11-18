@@ -1,0 +1,77 @@
+@import "const";
+.faq_block{
+  width: 100%;
+  box-shadow: 0 5.4px 9.9px 0 #00000014;
+
+}
+.faq_box{
+  padding: 22px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq_box_text_q{
+  text-align: left;
+  color: $main-color1;
+  font-family: $font-family4;
+}
+.faq_box_svg{
+  padding-left: 20px;
+  transform: rotate(360deg);
+  transition: all .5s;
+}
+
+
+@media (min-width: 320px) {
+
+}
+@media (min-width: 410px) {
+
+}
+@media (min-width: 510px) {
+
+}
+@media (min-width: 610px) {
+
+}
+@media (min-width: 710px) {
+
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 810px) {
+
+}
+@media (min-width: 910px) {
+
+}
+@media (min-width: 992px) {
+
+}
+@media (min-width: 1010px) {
+
+}
+@media (min-width: 1110px) {
+  .faq_box_text_q{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+}
+@media (min-width: 1210px) {
+
+}
+@media (min-width: 1440px) {
+
+}
+@media (min-width: 1810px) {
+  .faq_box_text_q{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+}
+@media (min-width: 1920px) {
+
+}

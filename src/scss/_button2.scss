@@ -10,6 +10,11 @@
   border: 1px solid $main-color5;
   background: none;
   cursor: pointer;
+  transition: all .5s;
+}
+.button2_block:hover{
+  box-shadow: 0 4px 12px 0 #0000004D;
+  transition: all .5s;
 }
 .button_2_rotate{
   position: absolute;
@@ -20,17 +25,27 @@
   width: 410px;
   border: 2px solid $main-color5;
   background: none;
+  transition: all .5s;
+}
+.button2_block:hover .button_2_rotate{
+  transform: rotate(0deg);
+  transition: all .5s;
 }
 .button2_text{
   position: absolute;
   top:50%;
   left:50%;
-  transform:translate(-50%, -50%);
-  font-family: $font-family2;
+  transform:translate(-50%, -50%) scale(1);
+  font-family: $font-family4;
   font-size: 15px;
   font-weight: 700;
   line-height: 15px;
   color: $main-color5;
   text-transform: uppercase;
   white-space: nowrap;
+  transition: all .5s;
+}
+.button2_block:hover .button2_text{
+  transform:translate(-50%, -50%) scale(1.1);
+  transition: all .5s;
 }
