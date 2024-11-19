@@ -39,6 +39,11 @@
   font-family: $font-family5;
   color: $main-color8;
   text-decoration: none;
+  transition: all .5s;
+}
+.header_nav_links:hover{
+  color: $main-color1;
+  transition: all .5s;
 }
 .header_nav_links_ml{
   margin-left: 32px;

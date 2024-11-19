@@ -1,18 +1,30 @@
 @import "const";
 
-.ourphotos_background{
-  padding: 60px 0;
-}
-.ourphotos_img_block{
+
+.studygroups_items{
+  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: space-between;
-
 }
-.ourphotos_img{
+.studygroups_item{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.studygroups_items_img{
   height: auto;
   border-radius: 15px;
+  margin-bottom: 16px;
+}
+.studygroups_items_link{
+  font-family: $font-family5;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+  color: $main-color8;
+  text-decoration: none;
 }
 
 
@@ -32,7 +44,7 @@
 
 }
 @media (min-width: 768px) {
-  .ourphotos_img{
+  .studygroups_items_img{
     max-width: 220px;
   }
 }
@@ -52,16 +64,15 @@
 
 }
 @media (min-width: 1210px) {
-  .ourphotos_img{
+  .studygroups_items_img{
     max-width: 280px;
   }
 }
-
 @media (min-width: 1440px) {
 
 }
 @media (min-width: 1810px) {
-  .ourphotos_img{
+  .studygroups_items_img{
     max-width: 310px;
   }
 }

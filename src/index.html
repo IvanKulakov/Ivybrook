@@ -2,7 +2,7 @@
 <html lang="en">
 @@include('html/head.html',{ "title": "Головна" })
 <body class="main">
-
+@@include('html/btn_up.html',{ })
 @@include('html/header.html',{
 "display" : "invisible",
 })
@@ -11,16 +11,16 @@
 })
 @@include('html/our-approach.html',{ })
 
-<main>
+<main class="main_block_background">
     <div class="wrapper2 main_block">
         <div class="main_img_block">
-            <img src="/img/main1.jpg" alt="main">
+            <img class="main_img_1" src="/img/main1.jpg" alt="main">
             <div class="main_img_block_bottom">
-                <img src="/img/main2.jpg" alt="main">
-                <img src="/img/main2.jpg" alt="main">
+                <img class="main_img_2" src="/img/main2.jpg" alt="main">
+                <img class="main_img_2"src="/img/main2.jpg" alt="main">
             </div>
         </div>
-        <div>
+        <div class="main_content_block">
             <h1 class="ourprograms_content_h1">
                 Про Mommy Ground
             </h1>
@@ -43,6 +43,7 @@
                 leadership of Jennifer and Drew, Ivybrook Academy opened its second campus in Fort Mill, SC, in
                 2011. Once again, the Preschool was a success and became a beloved part of the community.
             </p>
+            <a class="main_content_btn" href="ourhistory.html">Дізнатися більше</a>
         </div>
     </div>
 
@@ -52,7 +53,39 @@
 
 @@include('html/why_mommy_ground.html',{ })
 
+<div class="happy_background">
+    <div class="wrapper2">
+        <p class="our-approach_title">Радість</p>
+        <h1 class="our-approach_h1">Радість у навчанні</h1>
+        <div class="happy_items">
+            <div class="happy_box">
+                @@include('html/button4.html',{
+                "linkButton4":"faq.html",
+                "contentButton4":"FAQ",
+                })
+                <img class="happy_img"  src="/img/happy1.jpg" alt="happy1">
+            </div>
+            <div class="happy_box">
+                @@include('html/button4.html',{
+                "linkButton4":"mommyground.html",
+                "contentButton4":"Навчальний простір",
+                })
+                <img class="happy_img"  src="/img/happy2.jpg" alt="happy2">
+            </div>
+            <div class="happy_box">
+                @@include('html/button4.html',{
+                "linkButton4":"health_and_safety.html",
+                "contentButton4":"Здоров’я & безпека",
+                })
+                <img class="happy_img"  src="/img/happy3.jpg" alt="happy3">
+            </div>
+        </div>
+    </div>
+
+</div>
+
 @@include('html/footer.html',{ })
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="js/app.min.js"></script>
 </html>
