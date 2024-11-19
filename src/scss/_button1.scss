@@ -12,6 +12,7 @@
   width: fit-content;
   cursor: pointer;
   border-radius: 20px;
+  transition: all .5s;
 }
 .button1_colors{
   border: 2px solid $main-color1;
@@ -20,4 +21,8 @@
 .button2_colors{
   border: 2px solid $main-color5;
   color: $main-color5;
+}
+.button1:hover{
+  box-shadow: 0 4px 12px 0 #0000004D;
+  transition: all .5s;
 }

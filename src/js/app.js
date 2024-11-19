@@ -41,13 +41,67 @@ catch (e){
 }
 //btn-up block end
 
-const slider2 = document.querySelector('.swiper');
-const sl2 = new Swiper(slider2,{
-    direction: 'horizontal',
-    loop: false,
-    speed: 500,
-    navigation: {
-        nextEl: ".nav-next",
-        prevEl: ".nav-prev",
-    },
-})
+//swiper start
+try{
+    const slider2 = document.querySelector('.swiper');
+    const sl2 = new Swiper(slider2,{
+        direction: 'horizontal',
+        loop: false,
+        speed: 500,
+        navigation: {
+            nextEl: ".nav-next",
+            prevEl: ".nav-prev",
+        },
+    })
+}
+catch (e){
+    console.log(e)
+}
+
+//swiper end
+
+
+// faq start
+try{
+    const openFaq = document.getElementsByClassName('faq_box_svg');
+    const itemQ = document.getElementsByClassName('faq_item_q');
+    const itemAns = document.getElementsByClassName('faq_ans');
+
+    const setIdForElemFaq = () => {
+        for (let i = 0; i < openFaq.length; i++){
+            openFaq[i].id = 'openFaq' + i;
+            openFaq[i].addEventListener('click', openAns)
+        }
+        for (let i = 0; i < itemQ.length; i++){
+            itemQ[i].id = 'itemQ' + i;
+        }
+        for (let i = 0; i < itemAns.length; i++){
+            itemAns[i].id = 'faq_ans' + i;
+        }
+    }
+
+    const openAns = (e) => {
+        let action;
+        if ( e.target.classList.contains('faq_box_svg')) {
+            action = Number(e.target.id.slice(-1))
+        }
+        if (!e.target.classList.contains('faq_box_svg')) {
+            action = Number(e.target.parentNode.id.slice(-1));
+        }
+        document.getElementById(`openFaq${action}`).classList.toggle('faq_box_svg_active');
+        document.getElementById(`faq_ans${action}`).classList.toggle('faq_ans_active');
+
+    }
+
+
+
+
+
+    setIdForElemFaq();
+
+
+}
+catch (e){
+    console.log(e)
+}
+// faq end
