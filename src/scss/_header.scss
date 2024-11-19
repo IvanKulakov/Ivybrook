@@ -26,7 +26,10 @@
 
 .header_nav_block{
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
+  gap: 12px;
+
 }
 .header{
   padding: 16px 0;
@@ -94,6 +97,11 @@
 
 
 @media (min-width: 320px) {
+  .header_nav_links {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
 
 }
 @media (min-width: 410px) {
