@@ -140,6 +140,17 @@
 
 
 @media (min-width: 320px) {
+  .ourprograms_content_h1{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+  }
+  .ourprograms_content_text{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 26px;
+  }
 
 }
 @media (min-width: 410px) {
@@ -152,7 +163,11 @@
 
 }
 @media (min-width: 710px) {
-
+  .ourprograms_content_h1{
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 40px;
+  }
 }
 @media (min-width: 768px) {
 }
@@ -190,7 +205,7 @@
   .ourprograms_content_text{
     font-size: 16px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 22px;
     margin-bottom: 26px;
   }
   .ourprograms_box_nav{
