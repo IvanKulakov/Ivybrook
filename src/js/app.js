@@ -41,7 +41,7 @@ catch (e){
 }
 //btn-up block end
 
-//swiper start
+//swiper11 start
 try{
     const slider2 = document.querySelector('.swiper');
     const sl2 = new Swiper(slider2,{
@@ -58,7 +58,27 @@ catch (e){
     console.log(e)
 }
 
-//swiper end
+//swiper1 end
+
+
+//swiper11 start
+try{
+    const slider3 = document.querySelector('.swiper2');
+    const sl3 = new Swiper(slider3,{
+        direction: 'horizontal',
+        loop: false,
+        speed: 500,
+        navigation: {
+            nextEl: ".nav-next1",
+            prevEl: ".nav-prev1",
+        },
+    })
+}
+catch (e){
+    console.log(e)
+}
+
+//swiper1 end
 
 
 // faq start

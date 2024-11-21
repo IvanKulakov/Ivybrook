@@ -57,7 +57,7 @@
     <div class="wrapper2 happy_background">
         <p class="ourprograms_content_h1">Радість</p>
         <h1 class="ourprograms_content_title">Радість у навчанні</h1>
-        <div class="happy_items">
+        <div class="happy_big happy_items">
             <div class="happy_box">
                 @@include('html/button4.html',{
                 "linkButton4":"faq.html",
@@ -79,6 +79,53 @@
                 })
                 <img class="happy_img"  src="img/happy3.jpg" alt="happy3">
             </div>
+        </div>
+        <div class="happy_mob">
+            <div class="swiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="happy_box">
+                            @@include('html/button4.html',{
+                            "linkButton4":"faq.html",
+                            "contentButton4":"FAQ",
+                            })
+                            <img class="happy_img"  src="img/happy1.jpg" alt="happy1">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="happy_box">
+                            @@include('html/button4.html',{
+                            "linkButton4":"mommyground.html",
+                            "contentButton4":"Навчальний простір",
+                            })
+                            <img class="happy_img"  src="img/happy2.jpg" alt="happy2">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="happy_box">
+                            @@include('html/button4.html',{
+                            "linkButton4":"health_and_safety.html",
+                            "contentButton4":"Здоров’я & безпека",
+                            })
+                            <img class="happy_img"  src="img/happy3.jpg" alt="happy3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="why_mommy_ground_svg_mob_block">
+                <div class="why_mommy_ground_svg_box_mob why_mommy_ground_svg_box  nav-prev1">
+                    <svg class="why_mommy_ground_svg_fit" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3857 1.8474L8.2582 10.9749L17.3857 20.1025L15.5374 21.9509L4.56511 10.974L15.5401 -0.000976562L17.3857 1.8474Z" fill="white"/>
+                    </svg>
+                </div>
+                <div class="why_mommy_ground_svg_box_mob why_mommy_ground_svg_box  nav-next1">
+                    <svg class="why_mommy_ground_svg why_mommy_ground_svg_fit" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3857 1.8474L8.2582 10.9749L17.3857 20.1025L15.5374 21.9509L4.56511 10.974L15.5401 -0.000976562L17.3857 1.8474Z" fill="white"/>
+                    </svg>
+                </div>
+            </div>
+
         </div>
     </div>
 
