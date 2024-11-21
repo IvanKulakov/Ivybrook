@@ -2,10 +2,8 @@
 
 .button3{
   background: none;
-  padding: 28px 46px;
   font-family: $font-family4;
   text-transform: uppercase;
-  font-size: 15px;
   font-weight: 700;
   line-height: 16px;
   border-radius: 15px;
@@ -25,4 +23,61 @@
 .button3:hover{
   box-shadow: 0 4px 12px 0 #0000004D;
   transition: all .5s;
+}
+
+@media (min-width: 320px) {
+  .button3{
+    font-size: 14px;
+    padding: 15px 10px;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 410px) {
+
+}
+@media (min-width: 510px) {
+
+}
+@media (min-width: 610px) {
+
+}
+@media (min-width: 710px) {
+  .button3{
+    font-size: 14px;
+    padding: 15px 20px;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 810px) {
+
+}
+@media (min-width: 910px) {
+
+}
+@media (min-width: 992px) {
+
+}
+@media (min-width: 1010px) {
+
+}
+@media (min-width: 1110px) {
+
+}
+@media (min-width: 1210px) {
+  .button3{
+    font-size: 15px;
+    padding: 28px 46px;
+  }
+
+}
+@media (min-width: 1440px) {
+
+}
+@media (min-width: 1810px) {
+
+}
+@media (min-width: 1920px) {
+
 }

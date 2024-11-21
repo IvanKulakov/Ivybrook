@@ -1,17 +1,12 @@
 @import "const";
 
 .future_background{
-  padding-bottom: 90px;
+  padding: 90px 0;
 }
 .future_pos{
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
 }
-.future_left{
-  width: 50%;
-}
+
 .future_right{
   display: flex;
   flex-direction: row;
@@ -27,7 +22,6 @@
 .future_ears_text{
   width: fit-content;
   font-family: $font-family5;
-  font-size: 18px;
   font-weight: 700;
   line-height: 24px;
   text-align: left;
@@ -83,6 +77,14 @@
 
 
 @media (min-width: 320px) {
+  .future_pos {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .future_ears_text{
+    font-size: 14px;
+  }
 
 }
 @media (min-width: 410px) {
@@ -95,6 +97,15 @@
 
 }
 @media (min-width: 710px) {
+  .future_pos {
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
+  .future_left{
+    width: 50%;
+  }
+
 
 }
 @media (min-width: 768px) {
@@ -130,6 +141,9 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
+  }
+  .future_ears_text{
+    font-size: 18px;
   }
 }
 @media (min-width: 1440px) {

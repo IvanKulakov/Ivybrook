@@ -28,7 +28,22 @@
 
 
 @media (min-width: 320px) {
-
+  .aside_block{
+    width: 100%;
+    padding: 20px 20px;
+  }
+  .aside_link{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    padding: 14px 0;
+  }
+  .aside_content{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 14px;
+  }
 }
 @media (min-width: 410px) {
 
@@ -37,7 +52,22 @@
 
 }
 @media (min-width: 610px) {
-
+  .aside_block{
+    width: 320px;
+    padding: 20px 20px;
+  }
+  .aside_link{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    padding: 18px 0;
+  }
+  .aside_content{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 14px;
+  }
 }
 @media (min-width: 710px) {
 

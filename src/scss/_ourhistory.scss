@@ -29,16 +29,11 @@
   justify-content: space-around;
 }
 
-.to_school_background{
-  padding: 90px 0;
-}
+
 .to_school_block{
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 .to_school_img{
-  min-width: 50%;
   border-radius: 15px;
 }
 .to_school_text_box{
@@ -58,7 +53,6 @@
 }
 .to_school_link_box{
   box-sizing: border-box;
-  padding: 30px 20px;
   width: 100%;
   border: 2px solid $main-color5;
   border-radius: 15px;
@@ -78,6 +72,27 @@
 
 
 @media (min-width: 320px) {
+  .to_school_background{
+    padding: 30px 0;
+  }
+  .to_school_block {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .to_school_title{
+    padding-bottom: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .to_school_link_title{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px
+  }
+  .to_school_link_box{
+    padding: 16px 10px;
+  }
 
 }
 @media (min-width: 410px) {
@@ -87,20 +102,57 @@
 
 }
 @media (min-width: 610px) {
-
+  .to_school_link_title{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px
+  }
 }
 @media (min-width: 710px) {
-
-}
+  .to_school_background{
+    padding: 50px 0;
+  }
+  .to_school_block {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .to_school_title{
+    padding-bottom: 26px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .to_school_text_box{
+    margin-left: 20px;
+  }
+  .to_school_img{
+    min-width: 50%;
+    height: auto;
+  }
+  .ourhistory_text_block{
+    margin-right: 20px;
+  }
+  .to_school_link_box{
+    padding: 30px 20px;
+  }
+  }
 @media (min-width: 768px) {
 }
 @media (min-width: 810px) {
-
+  .to_school_img{
+    min-width: 50%;
+  }
 }
 @media (min-width: 910px) {
 
 }
 @media (min-width: 992px) {
+  .to_school_text_box{
+    margin-left: 40px;
+  }
+  .ourhistory_text_block{
+    margin-right: 40px;
+  }
 
 }
 @media (min-width: 1010px) {
@@ -110,6 +162,9 @@
 
 }
 @media (min-width: 1210px) {
+  .to_school_background{
+    padding: 70px 0;
+  }
   .ourhistory_text_block{
     margin-right: 60px;
   }
@@ -159,6 +214,9 @@
 
 }
 @media (min-width: 1810px) {
+  .to_school_background{
+    padding: 90px 0;
+  }
   .ourhistory_text_block{
     margin-right: 80px;
   }

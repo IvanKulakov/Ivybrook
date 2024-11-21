@@ -1,12 +1,7 @@
 @import "const";
 
-.ourprograms_background{
-  padding-top: 70px;
-}
 .ourprograms_pos{
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 .ourprograms_content_h1{
   font-family: $font-family1;
@@ -50,9 +45,7 @@
   color: $main-color5;
 }
 
-.ourprograms_box_block{
-  margin-left: 80px;
-}
+
 .ourprograms_box_nav{
   box-shadow: 0 5.4px 9.9px 0 #00000014;
   text-align: center;
@@ -131,6 +124,7 @@
   line-height: 38.55px;
   color: $main-color8;
   margin-bottom: 20px;
+  text-align: center;
 }
 .to_school_text_box_sa{
   display: flex;
@@ -145,13 +139,29 @@
     font-weight: 500;
     line-height: 40px;
   }
+  .ourprograms_content_h2{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
   .ourprograms_content_text{
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
     margin-bottom: 26px;
   }
-
+  .ourprograms_pos{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .ourprograms_background{
+    padding: 30px 0;
+  }
+  .ourprograms_content_link {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+  }
 }
 @media (min-width: 410px) {
 
@@ -168,8 +178,27 @@
     font-weight: 500;
     line-height: 40px;
   }
-}
+  .ourprograms_pos{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .ourprograms_box_block{
+    margin-left: 80px;
+  }
+  .ourprograms_background{
+    padding: 50px 0;
+  }
+  .to_school_text_box_sa{
+    margin-left: 20px;
+  }
+  .ourprograms_content_link {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+  }
 @media (min-width: 768px) {
+
 }
 @media (min-width: 810px) {
 
@@ -178,7 +207,9 @@
 
 }
 @media (min-width: 992px) {
-
+  .to_school_text_box_sa{
+    margin-left: 40px;
+  }
 }
 @media (min-width: 1010px) {
 
@@ -201,6 +232,11 @@
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 16px;
+  }
+  .ourprograms_content_h2{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 14px;
   }
   .ourprograms_content_text{
     font-size: 16px;
@@ -231,7 +267,9 @@
   }
 }
 @media (min-width: 1440px) {
-
+  .ourprograms_background{
+    padding: 70px 0;
+  }
 }
 @media (min-width: 1810px) {
   .ourprograms_content_h1{
