@@ -1,5 +1,12 @@
 @import "const";
-
+.head_nav{
+  position: fixed;
+  margin-top: -56px;
+  z-index: 12;
+  background: $main-color11;
+  padding: 10px 0;
+  width: 100%;
+}
 .logo_burger{
   text-decoration: none;
 }
@@ -8,6 +15,7 @@
   height: 32px;
 }
 .header-burger{
+  z-index: 998;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -25,6 +33,7 @@
   fill: #FFFFFF;
 }
 .header-burger_line-block{
+  position: relative;
   width: 42px;
   height: 24px;
   display: flex;
@@ -37,6 +46,8 @@
   border-radius: 3px;
   height: 4px;
   width: 100%;
+  transition: all .5s;
+
 }
 .header_button_tel{
   background-color: #FFFFFF;
@@ -52,13 +63,13 @@
 }
 
 @media (min-width: 320px) {
+  .head_nav_vis{
+    display: block;
+  }
   .header-burger{
     display: flex;
   }
-  .head_nav{
-    background: $main-color11;
-    padding: 10px 0;
-  }
+
 }
 @media (min-width: 510px) {
 }
@@ -70,6 +81,9 @@
   }
   .head_nav{
     padding: 0;
+  }
+  .head_nav_vis{
+    display: none;
   }
 }
 @media (min-width: 768px) {

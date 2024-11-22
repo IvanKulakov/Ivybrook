@@ -7,6 +7,7 @@
 .header_top{
   background: $main-color7;
   padding: 13px 0;
+  z-index: 20;
 }
 .header_top_logo{
   cursor: pointer;
@@ -22,6 +23,10 @@
   font-family: $font-family5;
   color: $main-color8;
   text-decoration: none;
+  cursor: pointer;
+}
+.header_top_link_button{
+  z-index: 999;
 }
 
 .header_nav_block{
@@ -92,6 +97,9 @@
 
 
 @media (min-width: 320px) {
+  .header_background{
+    margin-top: 56px;
+  }
   .header_nav_links {
     font-size: 14px;
     font-weight: 400;
@@ -151,7 +159,9 @@
   .nav_header{
     display: block;
   }
-
+  .header_background{
+    margin-top: 0;
+  }
 }
 @media (min-width: 768px) {
 

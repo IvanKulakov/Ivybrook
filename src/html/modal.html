@@ -34,37 +34,49 @@
         </clipPath>
       </defs>
     </svg>
-    <div class="modal_block_title">
-      <p class="title_text_modal">Залишити замовлення</p>
+    <div class="modal_pos">
+      <div class="modal_text_block">
+        <div class="modal_block_title">
+          <p class="title_text_modal">Подати заявку на запис до садочку або підготовки до школи</p>
+        </div>
+        <form>
+          <input
+                  class="input-form"
+                  id="userNameInput"
+                  type="text"
+                  name="userName"
+                  placeholder="Ім’я дитини *"
+                  value=""
+          />
+          <input
+                  class="input-form"
+                  id="userPhoneInput"
+                  type="tel"
+                  name="userPhone"
+                  placeholder="Телефон одного із батьків дитини*"
+                  value=""
+          />
+          <input
+                  class="input-form"
+                  id="userNameAge"
+                  type="text"
+                  name="userName"
+                  placeholder="Скільки років Вашій дитині?"
+                  value=""
+          />
+          <div class="btn_modal_pos">
+            <button
+                    id="closedModal"
+                    class="btn_modal"
+                    type="submit"
+            >
+              ЗАПИСАТИСЯ
+            </button>
+          </div>
+
+        </form>
+      </div>
+      <img class="modal_img" src="img/modal-min.jpg" alt="">
     </div>
-
-
-    <form>
-      <p class="input-form-title">Ваше ім'я</p>
-      <input
-              class="input-form"
-              id="userNameInput"
-              type="text"
-              name="userName"
-              placeholder="Як до вас звертатись"
-              value=""
-      />
-      <p class="input-form-title">Номер телефону</p>
-      <input
-              class="input-form"
-              id="userPhoneInput"
-              type="text"
-              name="userPhone"
-              placeholder="+380 __-__-__-___"
-              value=""
-      />
-      <button
-              id="closedModal"
-              class="btn_modal"
-              type="submit"
-      >
-        Залишити заявку
-      </button>
-    </form>
   </div>
 </div>

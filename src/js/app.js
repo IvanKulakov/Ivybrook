@@ -130,19 +130,28 @@ catch (e){
 try{
     const burgerMenuOpenBTN = document.getElementById('burger-menu-open');
     const burgerMenu = document.getElementById('burger-menu');
-    const burgerMenuCloseBTN = document.getElementById('burger-menu-close');
     const burgerMenuStickOpen = document.getElementById('open-burger-stick-menu');
+    const line1 = document.getElementById('header-burger_line_1')
+    const line2 = document.getElementById('header-burger_line_2')
+    const line3 = document.getElementById('header-burger_line_3')
 
 
     const openBurger = () => {
-        burgerMenu.classList.add('_active-burger-menu')
+        burgerMenu.classList.toggle('_active-burger-menu');
+        line1.classList.toggle('header-burger_open_top_line1');
+        line2.classList.toggle('header-burger_open_top_line2');
+        line3.classList.toggle('header-burger_open_top_line3');
+
     }
     const closeBurger = () => {
-        burgerMenu.classList.remove('_active-burger-menu')
+        burgerMenu.classList.remove('_active-burger-menu');
+        line1.classList.remove('header-burger_open_top_line1');
+        line2.classList.remove('header-burger_open_top_line2');
+        line3.classList.remove('header-burger_open_top_line3');
     }
     window.addEventListener('scroll', closeBurger)
     burgerMenuOpenBTN.addEventListener('click', openBurger);
-    burgerMenuCloseBTN.addEventListener('click', closeBurger);
+    // burgerMenuCloseBTN.addEventListener('click', closeBurger);
     // burgerMenuStickOpen.addEventListener('click', openBurger);
 }
 catch (e)
@@ -150,3 +159,66 @@ catch (e)
     console.log(e)
 }
 //burger menu block end
+
+//modal block start
+try {
+    const btsOpen = document.getElementsByClassName('bntOpenModal');
+    const btnOpenModal = document.getElementById('openModal');
+    const btnClosedModal = document.getElementById('close_icon');
+    const btnsubmit = document.getElementById('closedModal');
+    const modal = document.getElementById('modal');
+    const userNameInput = document.getElementById('userNameInput');
+    const userPhoneInput = document.getElementById('userPhoneInput');
+    const userNameAge = document.getElementById('userNameAge');
+
+    const setOpen = () => {
+        for(let i=0; i < btsOpen.length; i++){
+            btsOpen[i].addEventListener('click', open)
+        }
+    }
+
+    const open = function (){
+        modal.classList.add('modal-active');
+        document.body.classList.add('main_hidden');
+    }
+    const closed = function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        // sendToTelegram(userNameInput.value, userPhoneInput.value);
+        userNameInput.value = "";
+        userPhoneInput.value = "";
+        userNameAge.value = "";
+        modal.classList.remove('modal-active');
+        document.body.classList.remove('main_hidden');
+    }
+    const exit = function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        userNameInput.value = "";
+        userPhoneInput.value = "";
+        userNameAge.value = "";
+        modal.classList.remove('modal-active');
+        document.body.classList.remove('main_hidden');
+    }
+    setOpen();
+    btnOpenModal.addEventListener('click', open);
+    btnClosedModal.addEventListener('click', exit);
+    btnsubmit.addEventListener('click', closed);
+    userPhoneInput.addEventListener('focus', _ => {
+        if(!/^\+\d*$/.test(userPhoneInput.value))
+            userPhoneInput.value = '+38';
+
+    });
+
+    userPhoneInput.addEventListener('keypress', e => {
+        if(!/\d/.test(e.key)) {
+            e.preventDefault();
+        }
+    });
+
+
+}
+catch (e){
+    console.log(e)
+}
+//modal block end

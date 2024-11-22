@@ -1,8 +1,9 @@
+@import "const";
 .modal {
   z-index: 999;
   height: 100vh;
   width: 100vw;
-  background-color: rgba(0,0,0,0.8);
+  background:url("../img/modal.jpg") no-repeat center, linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, rgba(0, 110, 255, 0.2), rgba(0, 110, 255, 0.2)) ;
   position: fixed;
   top: 0;
   left: 0;
@@ -13,17 +14,22 @@
   pointer-events: none;
   transition: 0.5s;
 }
+
 .modal-active{
   opacity: 1;
   pointer-events: all;
   overflow: hidden;
 }
 .modal__content {
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05), 0px 4px 14px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05), 0 4px 14px rgba(0, 0, 0, 0.15);
   background: #fafbf6;
   box-sizing: border-box;
   position: relative;
+  }
+.modal_pos{
+  display: flex;
 }
+
 .close_icon{
   position: absolute;
   cursor: pointer;
@@ -38,20 +44,33 @@
   background: none;
   width: 100%;
   box-sizing: border-box;
-  border: 1px solid #1A1A1D;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  border-bottom: 1px solid $main-color9;
   margin-bottom: 15px;
-  font-size: 18px;
-  color: #4e4e4e;
   outline: none;
-  padding: 14px;
+  font-family: $font-family4;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  padding-top: 6px;
+  color: $main-color9;
+}
+.input-form::placeholder{
+  color: $main-color3;
+}
+.input-form:focus::placeholder{
+  opacity: 0.2;
 }
 .textarea-fixed {
   resize: none;
 }
 .input-form:focus {
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
   color: #434343;
 }
+
 .input-form-title{
   font-weight: 400;
   font-size: 12px;
@@ -63,72 +82,96 @@
 .main_hidden {
   overflow: hidden;
 }
+.btn_modal_pos{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 12px;
+}
 .btn_modal {
-  background: rgba(200, 198, 216, 0.3);
-  transition: background 0.5s;
-  box-shadow: 1px 1px 2px rgb(185, 185, 177);
-  padding: 16px 20px;
-  color:  #4e4e4e;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  padding: 10px 26px;
   border: none;
+  border-radius: 3px;
+  background: $main-color3;
+  font-family: $font-family3;
+  color: $main-color4;
+  font-size: 14px;
+  font-weight: 400;
+  transition: all 0.5s;
   cursor: pointer;
-  width: 100%;
-  margin-top: 60px;
 }
 .btn_modal:hover{
-  transition: background 0.5s;
-  background: #4e4e4e;
-  color: #fafbf6;
-
+  transition: all 0.5s;
+  box-shadow: 0 4px 12px 0 #0000004D;
 }
 .title_text_modal{
-  color: #4e4e4e;
-  font-size: 32px;
-  line-height: 38px;
+  font-family: $font-family4;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  text-align: center;
   overflow: hidden;
+  color: $main-color9;
 }
 .modal_block_title{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
 @media (min-width: 320px) {
   .modal__content {
-    padding: 20px;
     width: 300px;
   }
-  .close_icon {
-      top: 24px;
-      left: 246px;
-    }
   .title_text_modal{
     margin-bottom: 30px;
+  }
+  .modal_pos{
+    flex-direction: column-reverse;
+  }
+  .modal_text_block{
+    padding: 24px 15px;
+  }
+  .close_icon{
+    top: 0;
+    right: 0;
   }
 }
 @media (min-width: 610px) {
   .modal__content {
-    padding: 50px;
     width: 500px;
   }
   .title_text_modal{
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 }
 @media (min-width: 710px) {
 }
 @media (min-width: 768px) {
   .modal__content {
-    padding: 80px;
-    width: 602px;
+    width: 80vw;
+
   }
   .close_icon{
     top: 24px;
-    left: 546px;
+    left: 45%;
   }
   .title_text_modal{
-    margin-bottom: 60px;
+    margin-bottom: 50px;
+  }
+  .modal_text_block{
+    padding: 30px 30px;
+  }
+  .modal_pos{
+    flex-direction: row;
+  }
+  .modal_img{
+    max-width: 50%;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .modal__content {
+    border-radius: 20px;
   }
 }
 @media (min-width: 810px) {
@@ -136,12 +179,25 @@
 @media (min-width: 910px) {
 }
 @media (min-width: 992px) {
+
 }
 @media (min-width: 1010px) {
+
 }
-@media (min-width: 1110px) {
+@media (min-width: 1200px) {
+  .modal_text_block{
+    padding: 70px 80px;
+  }
 }
-@media (min-width: 1210px) {
+@media (min-width: 1300px) {
+  .modal_text_block{
+    padding: 100px 110px;
+  }
+}
+@media (min-width: 1400px) {
+  .modal_text_block{
+    padding: 100px 150px;
+  }
 }
 @media (min-width: 1810px) {
 }
