@@ -42,19 +42,19 @@
   top:50%;
   left:50%;
   transform:translate(-50%, -50%) rotate(45deg);
-  transition: all .5s;
+  transition: all 1s;
 }
 .header-burger_open_top_line2{
   position: absolute;
   top:50%;
   left:50%;
   transform:translate(-50%, -50%) rotate(-45deg);
-  transition: all .5s;
+  transition: all 1s;
 
 }
 .header-burger_open_top_line3{
   display: none;
-  transition: all .5s;
+  transition: all 0.5s;
 
 }
 .header-burger_open-menu{

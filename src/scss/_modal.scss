@@ -4,6 +4,7 @@
   height: 100vh;
   width: 100vw;
   background:url("../img/modal.jpg") no-repeat center, linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, rgba(0, 110, 255, 0.2), rgba(0, 110, 255, 0.2)) ;
+  background-size: cover;
   position: fixed;
   top: 0;
   left: 0;
@@ -133,8 +134,15 @@
     padding: 24px 15px;
   }
   .close_icon{
-    top: 0;
-    right: 0;
+    top: 20px;
+    right: 20px;
+  }
+  .modal_img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .modal__content {
+    border-radius: 20px;
   }
 }
 @media (min-width: 610px) {
@@ -167,6 +175,7 @@
   }
   .modal_img{
     max-width: 50%;
+    border-top-left-radius: 0;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
   }

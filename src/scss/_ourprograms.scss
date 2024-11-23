@@ -18,7 +18,6 @@
 }
 .ourprograms_content_text{
   font-family: $font-family3;
-  text-align: justify;
   color: $main-color8;
 }
 .ourprograms_content_h2{
@@ -49,6 +48,7 @@
 .ourprograms_box_nav{
   box-shadow: 0 5.4px 9.9px 0 #00000014;
   text-align: center;
+  width: 100%;
 }
 .ourprograms_box_dist{
   padding-top: 30px;
@@ -71,6 +71,11 @@
   justify-content: space-between;
   align-items: start;
 
+}
+.ourprograms_box_block{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .ourprograms_box{
   display: flex;
@@ -145,6 +150,7 @@
     margin-bottom: 10px;
   }
   .ourprograms_content_text{
+    text-align: left;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
@@ -195,6 +201,9 @@
     font-size: 18px;
     font-weight: 600;
     line-height: 20px;
+  }
+  .ourprograms_content_text{
+    text-align: justify;
   }
   }
 @media (min-width: 768px) {

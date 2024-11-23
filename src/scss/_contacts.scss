@@ -59,7 +59,7 @@
   color: $main-color4;
 }
 .contact_top_block_button{
-  margin-top: 40px;
+  margin-top: 8px;
   padding: 12px 32px;
   width: fit-content;
   border: none;
@@ -71,6 +71,11 @@
   font-weight: 400;
   line-height: 24px;
   cursor: pointer;
+  transition: all .5s;
+}
+.contact_top_block_button:hover{
+  box-shadow: 0 4px 12px 0 #0000004D;
+  transition: all .5s;
 }
 .contact_input_block{
   display: flex;
@@ -132,6 +137,9 @@
     padding-right: 150px;
     margin-bottom: 0;
   }
+  .contact_input_block{
+    margin-bottom: 50px;
+  }
 }
 @media (min-width: 768px) {
 }
@@ -151,12 +159,12 @@
 
 }
 @media (min-width: 1210px) {
-  .contact_input_block{
-    margin-bottom: 90px;
-  }
+
 }
 @media (min-width: 1440px) {
-
+  .contact_input_block{
+    margin-bottom: 70px;
+  }
 }
 @media (min-width: 1810px) {
 

@@ -22,6 +22,11 @@
   box-sizing: border-box;
   text-align: center;
   cursor: pointer;
+  transition: all .5s;
+}
+.aside_link:hover{
+  box-shadow: 0 4px 12px 0 #0000004D;
+  transition: all .5s;
 }
 
 

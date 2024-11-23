@@ -50,6 +50,7 @@
   color: $main-color4;
   text-decoration: none;
   background: none;
+  cursor: pointer;
 }
 
 .footer-centre{
@@ -289,7 +290,6 @@
 @media (min-width: 1010px) {
   .footer-top_imfooter{
     height: 240px;
-    border-radius: 600px 600px 0 0;
     left: -10%;
   }
   .footer_top_h1{
@@ -326,8 +326,7 @@
 }
 @media (min-width: 1210px){
   .footer-top_imfooter{
-    height: 380px;
-    border-radius: 740px 740px 0 0;
+    height: 400px;
     left: -20%;
   }
   .footer-bottom_content_text{
@@ -371,8 +370,7 @@
 }
 @media (min-width: 1810px) {
   .footer-top_imfooter{
-    height: 480px;
-    border-radius: 900px 900px 0 0;
+    height: 490px;
     left: -25%;
   }
   .footer-bottom_content_text{

@@ -28,6 +28,13 @@
   color: $main-color3;
   text-transform: uppercase;
   border-bottom: 2px solid $main-color3;
+  text-decoration: none;
+  transition: all .5s;
+
+}
+.future_ears_text:hover{
+  border-bottom: 2px solid $main-color5;
+  transition: all .5s;
 }
 .future_title{
   font-family: $font-family3;
