@@ -1,0 +1,20 @@
+@import "const";
+
+.answer_content {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05), 0 4px 14px rgba(0, 0, 0, 0.15);
+  background: #fafbf6;
+  box-sizing: border-box;
+  position: relative;
+  padding: 20px;
+  border-radius: 20px;
+  width: 300px;
+}
+.title_answer{
+  font-family: $font-family4;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  text-align: center;
+  overflow: hidden;
+  color: $main-color3;
+}
